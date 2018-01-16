@@ -1,0 +1,243 @@
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+section.page__wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.product__section {
+    background-color: #FFFFFF;
+    height: 40vh;
+    position: relative;
+    color: #553355;
+}
+
+.product-image {
+    background: url("../img/herson-rodriguez-96106.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.product__section::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+
+.product__section img {
+    width: 10em;
+    padding: 1em;
+    position: relative;
+}
+
+.product__section--desc {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding-top: 3em;
+    line-height: 1.5px;
+    color: white;
+}
+
+.product__section--desc::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.2;
+}
+
+.user__section {
+    background-color: #EC6EAD;
+    position: relative;
+    color: #535353;
+} 
+
+.user__section::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #00C4F5;
+    background: -webkit-linear-gradient(to bottom, #EC6EAD, #00C4F5);
+    background: linear-gradient(to right, #EC6EAD, #00C4F5);
+    opacity: 0.8;
+}
+
+.user__section--form {
+    position: relative;
+    padding: 1em;
+}
+
+.user__section--form h3 {
+    text-align: center;
+}
+
+.user__section--form form {
+    background-color: white;
+    padding: 1em;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 1em;
+    width: 70%;
+    min-width: 300px;
+    min-height: 500px;
+    border-radius: 2px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+  
+h1 {
+    text-align: center; 
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+  
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 1em;
+    border: 1px solid #aaaaaa;
+    border-radius: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+  
+input.invalid {
+    background-color: #ffdddd;
+}
+  
+.tab {
+    display: none;
+}
+  
+button {
+    background-color: #EC6EAD;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 3px;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+  
+#prevBtn {
+    background-color: #bbbbbb;
+}
+  
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+  
+.step.active {
+    opacity: 1;
+}
+  
+.step.finish {
+    background-color: #3494E6;
+}
+
+.tab span {
+    font-weight: 700;
+}
+
+.product__section--desc::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.2    ;
+}
+
+/* responsive media queries */
+
+@media screen and (min-width: 900px) {
+    section.page__wrapper {
+        display: flex;
+        height: 100vh;
+    }
+    
+    .product__section {
+        background-color: #FFFFFF;
+        width: 60%;
+        padding: 10px;
+        height: 100%;
+    }
+
+    .product__section--desc {
+        text-align: center;
+        line-height: 1;
+    }
+
+    .product__section--desc h3 {
+        font-size: 3em;
+    }
+
+    .product__section--desc h4 {
+        font-size: 2em;
+    }
+    
+    .user__section {
+        background-color: #EC6EAD;
+        width: 40%;
+    }
+
+    .user__section--form {
+        padding-top: 9em;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .product__section--desc {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .product__section--desc h3 {
+        font-size: 2em;
+        position: relative;
+    }
+
+    .product__section--desc h4 {
+        font-size: 1.5em;
+        position: relative;
+    }
+
+    .product__section--desc {
+        text-align: center;
+        line-height: 0;
+        position: relative;
+        color: #535353;
+    }
+}

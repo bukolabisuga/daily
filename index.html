@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">    
+        <title>WeMove Daily</title>
+        <!-- css stylesheets -->
+        <link href="css/main.css" rel="stylesheet">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    </head>
+    <body>
+        <section class="page__wrapper">
+            <div class="product__section product-image">
+                <img src="img/wemove.png">
+                <div class="product__section--desc">
+                    <h3>
+                        Transporting in Lagos can be hectic. 
+                    </h3>
+                    <h4>
+                        It doesn't have to be...
+                    </h4>
+                </div>
+                
+            </div>
+            <div class="user__section">
+                <div class="user__section--form">
+                    <!-- <form>
+                        <h3>Tell Us Your Route</h3>
+                        The closest bus stop to my home is <input type="text" name="" placeholder="shitta, surulere"> and I leave by <input type="text" name="" placeholder="6:00am">.
+                        The closest bus stop to my office is <input type="text" name="" placeholder="cms, lagos island"> and I leave work by 
+                        <input type="text" name="" placeholder="6:00pm">.
+                    </form> -->
+                    <form id="regForm">
+                        <h1>Tell Us Your Route, Move Better With Us!</h1>
+                        <!-- One "tab" for each step in the form: -->
+                        <div class="tab">
+                            <span>Contact Info:</span>
+                            <p><input placeholder="Full name" oninput="this.className = ''" name="fname"></p>
+                            <p><input placeholder="E-mail" oninput="this.className = ''" name="email"></p>
+                            <p><input placeholder="Phone number" oninput="this.className = ''" name="phone"></p>
+                        </div>
+                        <div class="tab">
+                            <span>Home location:</span>
+                            <p><input placeholder="e.g Surulere" oninput="this.className = ''" name="homeLocation"></p>
+                            <span>Nearest bus stop:</span>
+                            <p><input placeholder="e.g Shitta" oninput="this.className = ''" name="homeBus"></p>
+                            <span>Time you leave home:</span>
+                            <p><input placeholder="e.g 6:00am" oninput="this.className = ''" name="homeTime"></p>
+                        </div>
+                        <div class="tab">
+                            <span>Work location:</span>
+                            <p><input placeholder="e.g Marina" oninput="this.className = ''" name="workLocation"></p>
+                            <span>Nearest bus stop:</span>
+                            <p><input placeholder="e.g CMS" oninput="this.className = ''" name="workBus"></p>
+                            <span>Time you leave work:</span>
+                            <p><input placeholder="e.g 6:00pm" oninput="this.className = ''" name="workTime"></p>
+                        </div>
+                        <div style="overflow:auto;">
+                          <div style="float:right;">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                          </div>
+                        </div>
+                        <!-- Circles which indicates the steps of the form: -->
+                        <div style="text-align:center;margin-top:40px;">
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+          <script src="js/main.js"></script>
+    </body>
+</html>
